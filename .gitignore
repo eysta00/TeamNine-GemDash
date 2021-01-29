@@ -6,7 +6,7 @@
 /Assets/AssetStoreTools*
 /.idea/
 /Logs/
-
+/Logs
 /.collabignore
 /.vs/
 /.vscode/
