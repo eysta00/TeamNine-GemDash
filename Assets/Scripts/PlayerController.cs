@@ -22,6 +22,8 @@ namespace AGDDPlatformer
         bool isDashing;
         bool canDash;
         bool wantsToDash;
+        public bool isInFan;
+        public float fanPower;
 
         [Header("Audio")]
         public AudioSource source;
@@ -155,7 +157,13 @@ namespace AGDDPlatformer
                     jumpReleased = false;
                 }
 
-                velocity.x = move.x * maxSpeed;
+                if(!isInFan){
+                    velocity.x = move.x * maxSpeed; 
+                }else{
+                    velocity.x = (move.x * maxSpeed) + fanPower;
+                }
+                
+                
             }
 
             /* --- Adjust Sprite --- */

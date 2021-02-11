@@ -37,3 +37,6 @@ sysinfo.txt
 UserSettings/EditorUserSettings.asset
 Packages/packages-lock.json
 UserSettings/EditorUserSettings.asset
+UserSettings/EditorUserSettings.asset
+UIElementsSchema/UnityEditor.UIElements.Debugger.xsd
+UIElementsSchema/UnityEditor.PackageManager.UI.xsd
