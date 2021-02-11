@@ -115,7 +115,7 @@ namespace AGDDPlatformer
             }
         }
 
-        void ResetGame()
+        public void ResetGame()
         {
             SceneManager.LoadScene(firstLevel);
         }
