@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace AGDDPlatformer
 {
-    public class RestartTrigger : MonoBehaviour
-    {
-        void OnTriggerExit2D(Collider2D other)
+public class Spike : MonoBehaviour
+{
+    void OnTriggerEnter2D(Collider2D other)
         {
             PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
             if (playerController != null)
@@ -14,5 +14,6 @@ namespace AGDDPlatformer
                 playerController.ResetPlayer();
             }
         }
-    }
 }
+}
+
