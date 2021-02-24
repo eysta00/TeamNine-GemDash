@@ -7,7 +7,7 @@ namespace AGDDPlatformer
     {
         [Header("Settings")]
         public float minGroundNormalY = 0.65f;
-        public float gravityModifier = 1;
+        public float gravityModifier = 1f;
 
         [Header("Info")]
         public Vector2 velocity;

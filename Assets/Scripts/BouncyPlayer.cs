@@ -15,7 +15,8 @@ namespace AGDDPlatformer
         PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
         if (playerController != null)
             {
-                playerController.velocity.y = (float)Mathf.Sqrt(Mathf.Pow(playerController.velocity.y,2)) * (float)0.95;
+                //playerController.velocity.y = (float)Mathf.Sqrt(Mathf.Pow(playerController.velocity.y,2)) * (float)0.95;
+                playerController.velocity.y = -playerController.velocity.y * (float)0.95;
                 source.PlayOneShot(bounceSound);
             }
         }
