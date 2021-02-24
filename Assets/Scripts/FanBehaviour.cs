@@ -13,18 +13,19 @@ namespace AGDDPlatformer
             PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
             if (playerController != null)
             {
-                playerController.isInFan = true;
                 switch (direction){
                     case 0:
                         playerController.velocity.y += power;
                         break;
                     case 1:
+                        playerController.isInFan = true;
                         playerController.fanPower = power;
                         break;
                     case 2:
                         playerController.velocity.y -= power;
                         break;
                     case 3:
+                        playerController.isInFan = true;
                         playerController.fanPower = -power;
                         break;
                 }
